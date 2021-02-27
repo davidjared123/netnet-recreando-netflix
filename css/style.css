@@ -51,17 +51,22 @@ body{
 .featured{
     margin-top: -120px;
     /* border: solid 1px red; */
-    min-height: 300px;
+    min-height: 70vh;
     position: relative;
     overflow: hidden;
 }
 .featured video{
-    height: 60vh;
+    height: 70vh;
 }
 
 .featured-description{
-    position: relative;
-    margin-top: -4em;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 2em;
+    padding-bottom: .3em;
+    /* border: 1px solid red; */
     background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.814) 80%, transparent 100%);
 }
 
@@ -79,8 +84,12 @@ body{
 .featured-description ul{
     display: flex;
     margin: 0 24px;
+    padding: .4em 0 .8em 0;
+    /* border: solid 1px blue; */
     align-items: center;
     justify-content: space-evenly;
+    max-width: 20em;
+    margin: auto;
     /* border: 1px solid blue; */
 }
 
@@ -103,6 +112,8 @@ body{
     align-items: center;
     margin: 12px 10%;
     justify-content: space-between;
+    max-width: 20em;
+    margin: auto;
 }
 
 .button-primary{
@@ -228,6 +239,73 @@ body{
 }
 
 
-/* @media (min-width: 680px){
+@media (min-width: 640px){
     
-} */
+    /* SECTION MENU  */
+    .list-menu{
+        padding: 0 35%;
+    }
+    /* SECTION MAIN */
+    .main{
+        padding: 0 5%;
+    }
+
+    /* SECTION FEATURED  */
+    .featured{
+        /* background-color: red; */
+        margin-top: -150px;
+        height: 80vh;
+        margin-bottom: 2em;
+    }
+    .featured video{
+    height: auto;
+    min-width: 100vw;
+}
+
+    /* FEATURE DESCRIPTION  */
+    .featured-description{
+        background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.514) 60%, transparent 100%);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+    .featured-description img{
+        width: 25%;
+    }
+    .featured-description ul{
+        max-width: 20em;
+        margin: auto;
+        padding: 1em 25%;
+    }
+
+    .featured-links{
+        padding: 0 25%;
+        max-width: 20em;
+        margin: auto;
+    }
+
+    /* SECTION MAIN  */
+    .main{
+        padding: 2em;
+    }
+    .list-item img{
+        width: 12em;
+        height: 288px;
+        border-radius: 2px;
+    }
+
+    .list h2{
+        margin-bottom: .8em;
+        margin-top: 1.2em;
+        font-weight: 600;
+        font-size: 1.8em;
+    }
+
+    /* SECTION FOOTER  */
+
+    .footer{
+        z-index: 1000;
+    }
+}
