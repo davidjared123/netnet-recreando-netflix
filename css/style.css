@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Netflix;
+    src: url('../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Netflix;
+    src: url('../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 600;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Netflix;
+}
+
+
+    /* SECTION HEADER */
+.header{
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom,black 0% , rgba(0, 0, 0, 0.850) 60% ,transparent 100% );
+}
+.header-menu ul{
+    margin: 24px calc(62px - 1em) 110px calc(62px - 1em);
+    display: flex;
+    font-size: .9em;
+    justify-content: space-between;
+}
+
+.header-menu ul li{
+    list-style: none;
+}
+
+.header-menu ul li > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+    /* SECTION FEATURED */
+.featured{
+    margin-top: -120px;
+    /* border: solid 1px red; */
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.featured video{
+    height: 60vh;
+}
+
+.featured-description{
+    position: relative;
+    margin-top: -4em;
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.814) 80%, transparent 100%);
+}
+
+.featured-description > ul > li > a{
+    /* color: white; */
+    text-decoration: none;
+}
+
+.featured-description img{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.featured-description ul{
+    display: flex;
+    margin: 0 24px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+}
+
+.featured-description ul li{
+    font-size: .62em;
+    list-style: none;
+}
+
+.featured-description ul li::before{
+    content: "•";
+    margin-right: .8em;
+}
+
+.featured-description ul li:first-child::before{
+    display: none;
+}
+
+.featured-links{
+    display: flex;
+    align-items: center;
+    margin: 12px 10%;
+    justify-content: space-between;
+}
+
+.button-primary{
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    padding: .3em 1.6em .3em 1em;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: .6em;
+    font-weight: 600;
+}
+
+.play-icon::before{
+    content: '';
+    /* border: red solid 1px; */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/play.svg');
+}
+
+.button-secondary{
+    min-width: 4em;
+    font-size: .8em;
+    background: none;
+    color: white;
+    border: none;
+    font-size: .6em;
+    font-weight: 600;
+}
+
+.button-secondary::before{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    /* border: 1px solid yellow; */
+}
+.plus-icon::before{
+    fill: white;
+    color: white;
+    background-image: url('../images/icons/plus.svg');
+}
+.info-icon::before{
+    background-image: url('../images/icons/info.svg');
+}
+
+    /* SECTION MAIN */
+.main{
+    padding: 1em;
+}
+
+/* LIST CONTENT */
+.list h2{
+    margin-bottom: .5em;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.list-content{
+    overflow-x: auto;
+    display: flex;  
+    gap: .5em;
+    /* white-space: nowrap; */
+}
+
+.list-content::-webkit-scrollbar {
+    visibility: hidden;
+    display: none;
+}
+
+/* .list-item{
+    display: inline-block;
+} */
+
+.list-item img{
+    width: 6em;
+    height: 144px;
+    border-radius: 2px;
+}
+
+    /* SECTION FOOTER */
+.footer{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    padding: .8em;
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.footer > ul > li >  a{
+    color: #686868;
+    text-decoration: none;
+    transition: 150ms;
+}
+
+.footer svg{
+    fill: #686868;
+    display: block;
+    margin: auto;
+    transition: 150ms;
+}
+
+.footer-list-item:hover a{
+    /* color: white; */
+}
+
+.footer-list-item:hover :is(svg, a){
+    transition: 150ms;
+    fill: white;
+    color: white;
+}
+
+
+/* @media (min-width: 680px){
+    
+} */
