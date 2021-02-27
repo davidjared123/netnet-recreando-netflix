@@ -116,13 +116,17 @@ body{
     margin: auto;
 }
 
+.featured-links button:hover{
+    cursor: pointer;
+}
+
 .button-primary{
     font-size: .8em;
     display: flex;
     align-items: center;
     padding: .3em 1.6em .3em 1em;
     background-color: white;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
     font-size: .6em;
     font-weight: 600;
@@ -132,6 +136,7 @@ body{
     content: '';
     /* border: red solid 1px; */
     display: inline-block;
+    margin-bottom: 4px;
     width: 20px;
     height: 20px;
     background-image: url('../images/icons/play.svg');
@@ -245,6 +250,10 @@ body{
     .list-menu{
         padding: 0 35%;
     }
+    .header-menu ul{
+        font-size: 1.2em;
+    }
+
     /* SECTION MAIN */
     .main{
         padding: 0 5%;
@@ -257,6 +266,7 @@ body{
         height: 80vh;
         margin-bottom: 2em;
     }
+
     .featured video{
     height: auto;
     min-width: 100vw;
@@ -279,13 +289,54 @@ body{
         margin: auto;
         padding: 1em 25%;
     }
+    .featured-description ul li{
+        font-size: 1em;
+    }
+    .featured-description ul li::before{
+        content: "•";
+        margin-right: .5em;
+        margin-left: .5em;
+    }
 
     .featured-links{
         padding: 0 25%;
-        max-width: 20em;
+        max-width: 25em;
         margin: auto;
     }
+ 
+.button-primary{
+    font-size: 1em;
+    padding: .2em 1.8em .2em 1.2em;   
+}
 
+.play-icon::before{
+    width: 35px;
+    height: 34px;
+    background-image: url('../images/icons/play-w.svg');
+}
+
+.button-secondary{
+    min-width: 4em;
+    font-size: 1em;
+}
+
+.button-secondary::before{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 4px;
+    /* border: 1px solid yellow; */
+}
+.plus-icon::before{
+    fill: white;
+    color: white;
+    background-image: url('../images/icons/plus-w.svg');
+}
+.info-icon::before{
+    background-image: url('../images/icons/info-w.svg');
+}
     /* SECTION MAIN  */
     .main{
         padding: 2em;
