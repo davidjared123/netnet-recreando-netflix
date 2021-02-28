@@ -1,0 +1,128 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+.header-details a > img{
+    margin: 1em 0 .5em 1em;
+    /* margin-bottom: .5em; */
+    /* border: 1px solid red; */
+}
+
+.header-detail-main{
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header-detail-main img{
+    width: 100%;
+}
+
+.details-description{
+    padding: 0 1em;
+}
+
+.details-sub-item {
+    margin: .5em 0 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    height: 1.6em;
+    align-items: center;
+    font-size: 14px;
+}
+
+.details-sub-item .coincidence{
+    font-weight: 600;
+    color: #71D074;
+}
+.details-sub-item .year{
+    color: #686868;
+    margin-left: 15px;
+}
+.details-sub-item .rating{
+    background-color: #686868;
+    display: inline-block;
+    margin: auto;
+    border-radius: 2px;
+    padding: 5px 4px;
+}
+.details-sub-item .time{
+    margin-left: 15px;
+    color: #686868;
+}
+.details-sub-item .hd{
+    border: 1px solid #686868;
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    padding: 5px 4px;
+}
+
+.details-butons button{
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    margin: 8px 0;
+}
+
+.details-butons button > svg{
+    margin-right: 6px;
+}
+
+.btn-play{
+    background-color: white;
+}
+
+.btn-download{
+    background-color: #2B2B2B;
+    ;
+    color: white;
+}
+
+.details-description .description{
+    /* background-color: red; */
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.cast{
+    font-size: 11.2px;
+    margin: 8px 0;
+    color: #686868;
+}
+
+.description-icons{
+    font-size: 11.2px;
+    margin: 20px 0 26px 0;
+}
+.description-icons .icon{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin-right: 24px;
+    color: #686868;
+}
+
+.description-icons .icon > svg{
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+    /* SECTION MAIN  */
+.details-main{
+    padding: 0 1em;
+}
+
+.same{
+    border-top: #FF5251 4px solid;
+    padding: 8px 0;
+    width: auto;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+}
